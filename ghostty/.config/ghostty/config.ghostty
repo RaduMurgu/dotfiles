@@ -1,0 +1,5 @@
+theme = Catppuccin Mocha
+background-opacity = 0.9
+background-blur = true
+quit-after-last-window-closed = false
+
