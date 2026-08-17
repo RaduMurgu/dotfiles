@@ -1,0 +1,9 @@
+bibata-cursor-theme-bin
+catppuccin-cursors-macchiato
+catppuccin-cursors-mocha
+ghcup-hs-bin
+kvantum-qt6-git
+kvantum-theme-catppuccin-git
+papirus-folders-catppuccin-git
+splix
+visual-studio-code-bin
