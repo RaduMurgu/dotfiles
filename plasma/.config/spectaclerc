@@ -1,0 +1,19 @@
+[Annotations]
+annotationToolType=3
+freehandStrokeColor=0,0,255
+textFont=Inter,20,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+
+[ImageSave]
+lastImageSaveAsLocation=file:///home/r3lapse/Pictures/Screenshots/output_decoder_waveform.png
+lastImageSaveLocation=file:///home/r3lapse/Pictures/Screenshots/Screenshot_20260716_233018.png
+translatedScreenshotsFolder=Screenshots
+
+[VideoSave]
+translatedScreencastsFolder=Screencasts
+
+[ViewerWindow]
+2 screens: Height=466
+2 screens: Width=745
+2 screens: Window-Maximized=true
+3 screens: Height=466
+3 screens: Width=745

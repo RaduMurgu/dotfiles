@@ -1,0 +1,21 @@
+[Libinput][1133][49970][Logitech Gaming Mouse G502]
+PointerAcceleration=0.000
+PointerAccelerationProfile=1
+
+[Libinput][13159][6512][Endgame Gear Endgame Gear HS Dongle]
+PointerAcceleration=-0.600
+PointerAccelerationProfile=1
+ScrollMethod=4
+
+[Libinput][13159][6532][Endgame Gear OP1w 4k v2 Wireless Gaming Mouse]
+Enabled=true
+PointerAcceleration=-0.600
+PointerAccelerationProfile=1
+
+[Libinput][2][7][SynPS/2 Synaptics TouchPad]
+NaturalScroll=true
+PointerAcceleration=0.200
+PointerAccelerationProfile=2
+
+[Mouse]
+cursorTheme=catppuccin-mocha-lavender-cursors
