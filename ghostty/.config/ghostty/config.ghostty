@@ -1,5 +1,7 @@
 theme = Catppuccin Mocha
-background-opacity = 0.9
+background-opacity = 0.98
 background-blur = true
+custom-shader = shaders/stars.glsl
+custom-shader-animation = true
 quit-after-last-window-closed = false
 
