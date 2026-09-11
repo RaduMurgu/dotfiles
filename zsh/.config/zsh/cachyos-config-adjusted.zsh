@@ -46,8 +46,8 @@ export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 #alias open="xdg-open"
-alias make="make -j`nproc`"
-alias ninja="ninja -j`nproc`"
+# alias make="make -j`nproc`"
+# alias ninja="ninja -j`nproc`"
 alias n="ninja"
 alias c="clear"
 alias rmpkg="sudo pacman -Rns"
@@ -84,7 +84,9 @@ alias cat='bat'
 alias mirror="sudo cachyos-rate-mirrors"
 
 # Cleanup orphaned packages
-alias cleanup="sudo pacman -Rns $(pacman -Qtdq)"
+cleanup() {
+  sudo pacman -Rsn $(pacman -Qtdq)
+}
 
 # Get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
