@@ -50,10 +50,8 @@ export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # alias ninja="ninja -j`nproc`"
 alias n="ninja"
 alias c="clear"
-alias rmpkg="sudo pacman -Rns"
 alias cleanch="sudo pacman -Scc"
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
-alias update="sudo pacman -Syu"
 
 # Common use
 alias tarnow='tar -acf '
