@@ -4,13 +4,13 @@ const bool transparent = true;
 // terminal contents luminance threshold to be considered background (0.0 to 1.0)
 const float threshold = 0.15;
 // seconds for one layer to travel from far to near — HIGHER = SLOWER
-const float cycleTime = 60.;
+const float cycleTime = 81.;
 // divisions of grid — lower = fewer but larger/brighter stars
 const float repeats = 30.;
 // number of layers (depth steps). Keep fairly high to avoid visible popping.
 const float layers = 21.;
 // fraction of grid cells that actually contain a star (0.0 to 1.0) — LOWER = SPARSER
-const float density = 0.2;
+const float density = 0.04;
 // star tightness — higher = smaller, dimmer points
 const float starSize = 280.;
 // ──────────────────────────────────────────
