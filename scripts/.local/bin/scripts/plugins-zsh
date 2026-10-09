@@ -1,0 +1,38 @@
+#!/usr/bin/zsh
+
+if ! command -v git > /dev/null; then
+  print "Git not present" >&2
+  exit 1
+fi
+
+base="https://github.com"
+plugins=(
+    zdharma-continuum/fast-syntax-highlighting
+    zsh-users/zsh-autosuggestions
+    zsh-users/zsh-completions
+    Aloxaf/fzf-tab
+)
+fail=()
+
+parentdir=$HOME/.local/share/zsh
+mkdir -p $parentdir || { print "Creating $parentdir failed" >&2; exit 1 }
+
+for plugin in $plugins; do
+  dirname=${plugin:t}
+  dirpath=$parentdir/$dirname
+  repo=${base}/${plugin}
+  
+  if [[ ! -d $dirpath/.git ]]; then
+    print "Cloning $repo"
+    git clone --depth=1 $repo $dirpath || fail+=("Failed to clone $repo")
+  else
+    print "Updating $repo"
+    git -C $dirpath pull --ff-only || fail+=("Failed to pull $repo")
+  fi
+done
+
+if (( ${#fail} )); then
+  print "" >&2
+  print -l ${fail[@]} >&2
+  exit 1
+fi
