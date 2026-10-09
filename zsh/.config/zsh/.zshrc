@@ -1,4 +1,3 @@
-# ~/.config/zsh/.zshrc — interactive shell setup.
 # Order matters: completion before plugins, aliases last.
 
 ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"    # zcompdump, completion cache
@@ -11,6 +10,7 @@ ZSH_PLUGIN_DIR="$XDG_DATA_HOME/zsh"    # cloned plugins
 if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
   source "$GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration"
 fi
+
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
 
 for config in options history keybinds completion plugins aliases; do
