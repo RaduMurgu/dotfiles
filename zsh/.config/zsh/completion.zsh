@@ -24,6 +24,8 @@ zstyle ':completion:*:descriptions' format '[%d]'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-zstyle ':fzf-tab:*' fzf-flags --bind=tab:accept
+# Adaptive height (~): fzf sizes the window to the list plus its --style full
+# borders, up to 2/3 of the screen. Overrides fzf-tab's candidate-count guess.
+zstyle ':fzf-tab:*' fzf-flags --height=~66%
 zstyle ':fzf-tab:*' use-fzf-default-opts yes
 zstyle ':fzf-tab:*' switch-group '<' '>'
