@@ -3,8 +3,12 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
-    opts = { flavour = "mocha", transparent_background = true },
+    opts = {
+      flavour = "mocha",
+      transparent_background = true,
+      float = { transparent = true },
+    },
   },
 
-  { "LazyVim/LazyVim", opts = { colorscheme = "catppuccin" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "catppuccin-mocha" } },
 }
